@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perspective</title>
+	<style type="text/css">
+		nav{
+			perspective:2080px;
+		/*	perspective-origin: 0% 100% ;*/
+			
+			outline: 1px dotted blue ;
+			margin-top:300px;
+		}
+		section{
+			height: 100px;
+			margin: auto ;
+			width: 30%;
+			border:4px solid green ;
+			transition: all 1s ease ;
+			position: relative;
+			transform-style: preserve-3d;
+					
+		}
+		nav:hover section{
+		/*	transform: scaleZ(1) translateZ(100px) rotate3d(1,1,1,45deg);*/
+			transform: rotateY(120deg);
+		}
+		div, article {
+			position: absolute; 
+			
+		}
+		article{backface-visibility: hidden;}
+		nav img{
+			width: 50px ; height: 30px ;
+		}
+		div{
+			transform:rotateY(180deg);
+		}
+	</style>
+	
+</head>
+<body>
+	<nav>
+		<section>
+			<div>
+				<img src="imagenes/vnzla32.ico">
+			</div>
+			<article>
+				<img src="imagenes/paises.JPG">
+			</article>
+		</section>
+	</nav>
+	<img src="https://www.redemerca.com/Content/img/Banners/Principal/banner3_1.jpg">
+
+</body>
+</html>

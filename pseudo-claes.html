@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>child(even o odd)</title>
+	<link href = "https://fonts.googleapis.com/css?family= Roboto & display = swap" rel = "stylesheet">
+	<style type="text/css">
+		div :nth-child(2n+1) { /*even odd*/
+			color: blue ;
+		}
+		div :nth-of-type(2n) {
+			color: red ;
+		}
+
+		article :only-child{
+			/* selecciona elemento si y solo si es unico hijo */
+			border: 1px solid blue;
+		}
+
+		nav :only-of-type{ 
+			font-variant: small-caps;
+		}
+		:root { /*solopa body no parece muy util*/
+			border:1px solid green ;
+			font-family: 'Roboto', sans-serif;
+		}
+		footer :empty {
+			background: blue;
+		}
+		footer div { height: 20px ; }
+		/* enabled disabled */ 
+		footer :checked {
+			display: block;
+			height: 50px; 
+		}
+
+		nav :not(a) {
+			font-weight: bold; /*setion agarra esta propiedad */
+		}
+
+		/* column -webkit- -moz-*/
+
+	</style>
+</head>
+<body>
+	<nav>
+		<p>un parrrafo</p>
+		<a href="#">enlace</a>
+		<a href="#">enlace 2</a>
+		<section>
+			<a href="#">a ver small-caps aqu?</a>
+			<a href="#">unico hijo</a>
+		</section>
+	</nav>
+
+	<div>sdf
+		<p>hola</p>
+		<p>hola1</p>
+		<p>hola2</p>
+		<p>hola3</p>
+	</div>
+	<div>
+		<p>hola</p>
+		<p>hola1</p>
+		<p>hola2</p>
+		<p>hola3</p>
+	</div>
+	<article>
+		<span>hola</span>
+	</article>
+	
+	<footer>
+		<div></div>
+		<p>hola</p>
+		<a href="#">q pasa aqui</a>
+		eres hombre: 
+		si <input type="radio" name="hombre" value="hombre">
+		no <input type="radio" name="hombre" value="hombre">
+
+		1<input type="checkbox" name="" > 
+		2<input type="checkbox" name=""> 
+	</footer>
+</body>
+</html>

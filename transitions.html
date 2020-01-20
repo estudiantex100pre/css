@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transitions</title>
+</head>
+<style type="text/css">
+	article {
+		
+		border: 5px solid red ;
+		height: 100px ;
+		width: 100px ;
+		background-color: blue ;
+	/*	transition-property: background, border-radius, margin-left ;
+		transition-duration: 1s ;
+		transition-delay: .5s;
+
+		transition-timing-function: cubic-bezier(.3,.92,.5,.29);
+		property duration timing-funtion delay*/
+		transition: all 1.5s cubic-bezier(.53,.26,.24,1.31) .2s ;	
+	}
+	div:hover article{
+		border-radius: 50% ;
+		background: #000;
+/*		transition-delay: 1s, .1s ; */
+		margin-left: 90%;
+
+	}
+	div{
+		padding: 60px ;
+		height: 100px ;
+		border-radius: 12px ;
+		position: absolute;
+		top: 50% ; left: 50% ; right: 0 ; bottom: 0;
+		margin-left: -515px ;
+		margin-top: 118px;
+		width: 900px ;
+		border: 15px solid orange ;
+	}
+	img{
+		border:10px solid tomato;
+		border-radius: 50% ;
+		background: rgba(0,0,0,.2);
+		width: 200px ;
+		height: 200px; 
+		padding: 0 ;
+	}
+	nav{
+		width: 220px;
+		margin: auto;
+		margin-top: 160px;
+	}
+</style>
+<body>
+	<div>
+	<section>
+		<article></article>
+	</section>
+	</div>	
+	<nav>
+		<img src="imagenes/vnzla32.ico">
+	</nav>
+</body>
+</html>

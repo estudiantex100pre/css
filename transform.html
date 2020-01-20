@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transform</title>
+	<style type="text/css">
+
+	img{
+		border:10px solid tomato;
+		border-radius: 50% ;
+		background: rgba(0,0,0,.2);
+		width: 200px ;
+		height: 200px; 
+		padding: 0 ;
+		transition: all 1s ease ;
+		transform-origin: 50% 50%;
+		margin-left: 80px;
+		
+	}
+	nav:hover img{
+		transform: translate(-200px, 210px) scale(-1.8, 1.5) rotate(360deg);
+		transform-origin: 50% 50% ;
+		
+	}
+	nav{
+		background: #534 ;
+		width: 520px;
+		margin: auto;
+		margin-top: 160px;
+	}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="imagenes/vnzla32.ico">
+	</nav>
+</body>
+</html>

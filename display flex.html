@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>run in</title>
+	<style type="text/css">
+
+		.alv  {
+			background: url(imagenes/sprite/sprite.PNG) 0 -32px;
+			height: 32px;
+			width: 32px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.span {
+			display: inline-block;
+			height: 32px ;
+			border:1px solid blue;
+			padding: 0 ;
+			font-size: 15pX;
+		}
+		b {
+			display: block;
+			margin-bottom: 0px; 
+		}
+		header { border: 2px solid	#000; 
+			height: 900px ;  
+			display: flex;
+			flex-direction: row; 
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+		/*	align-items:center;
+			/* sin height ajusta su tamaño lo mas minimo y alinea cada fila */
+ 
+		/*	align-content: center; /*sin height usa todo el tamaño q dispone */
+		}
+
+		.grow {flex-shrink:  .5;}
+		.grow2 {flex-shrink:  .1;}
+		.self { align-self:center;  }
+		header div {
+			height: 300px;
+			flex-basis: 250px;
+			border: 1px solid blue;
+			margin: 0 ; 	
+		}
+		header span, header b { border:1px  dotted green ;}
+
+	</style>
+</head>
+<body>
+<div class="alv"></div><span class="span">hola a todos<b> alv </b> </span>
+
+<header> 
+	<span>hola</span>
+	<div >1</div>
+	<span class="self" >chao</span>
+	<div >2</div>
+
+</header>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sprites</title>
+	<style type="text/css">
+		* { outline: 1px dotted blue; }
+
+		.localidad1, .localidad2, .localidad3  {
+			text-indent: 32px;
+			height: 32px ;
+			background-image: url(imagenes/sprite.PNG);
+			background-repeat: no-repeat;
+			line-height: 32px;
+		}
+		.localidad1 { background-position:  0 0 ; }
+		.localidad2 { background-position:  0 -32px; }
+		.localidad3 { background-position:  0 -64px; }	
+		h1 {
+		position: relative;
+		}
+		h1 span {
+		position: absolute;
+		display: block;
+		background: url("imagenes/fondosemi.JPG") repeat-x ;
+		width: 100%;
+		height: 31px;
+		}
+		/*psudo-clases*/
+		p:first-child {
+		color: blue;
+		}
+
+		/*pseudo elementos (elementos en bloque o celdas)*/
+		.letra:first-letter { font-size: 4em; float: left; font-weight: bold; line-height: .5em; margin: .1em; margin-top: 0; padding-bottom:  10px;} 
+
+		/*Los pseudo-elementos :before y :after * (elemntos all)*/
+	/*	p:before {content: "parrafo 1-"} 
+		p:after { content: ". final" }*/
+		small:before {content: "parrafo 1-"} ;}
+
+		/* nuevo slector ~*/
+	</style>
+
+</head>
+<body> <p>
+	<span>rojo</span></p>
+	<small class="letra">hola</small>
+	
+	<div>
+		<p class="localidad1">
+			<span>VENEZUELA</span> 
+		</p>
+		<p class="localidad2">
+		<span>	daniel alejandro subero mijares</span>
+		</p>
+		<p class="localidad3">
+		<span>	nor-este</span>
+		</p>
+	</div><br>
+
+	<!-- Elemento original -->
+	<h1>Lorem Ipsum</h1>
+	<!-- Elemento preparado para mostrar texto avanzado -->
+	<h1><span></span>Lorem Ipsum</h1>
+
+	<p class="letra" class="antes"><em> rojito</em> Lorem <span>sa<em>ipsum dolor</em></span> sit amet, consectetuer adipiscing elit.
+	Praesent odio sem, tempor quis, <em>auctor eu</em>, tempus at, enim. Praesent nulla
+	ante, <em>ultricies</em> id, porttitor ut, pulvinar quis, dui. jesus alberto subero amundaray</p>
+
+</body>
+</html>

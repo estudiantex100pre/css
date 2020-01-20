@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>column</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+		/*	background-image: url(imagenes/vene.png) , url(imagenes/vnzla32.ico); 
+			background-position: top right, bottom center ; 
+			background-repeat: repeat-y; 
+			background-size: 200px 300px, cover ;
+			background: url(imagenes/vene.png) top right / 200px 300px repeat-y,  url(imagenes/vnzla32.ico) bottom center / cover no-repeat ;
+		*/	
+		}
+		.ejemplo{
+	/*	-moz-column-count: 3;	
+		-moz-column-width: 200px;
+		-moz-column-gap: 20px;
+		*/
+		-webkit-column-count: 3;
+		/*-webkit-column-width:193.3;*/
+		-webkit-column-gap:10px ;
+		-webkit-column-rule: 1px dotted orange;
+		}
+		p {
+			border:20px dotted blue;
+			width: 600px;
+			background-color: rgba(500,50,80,.4);
+			background-image: url(imagenes/vene.png), url(imagenes/pefil.png);
+		/*	background-position: 200px 300px, left top;*/
+			background-repeat: no-repeat;
+			background-origin: content-box, border-box; /*padding, content, border */
+			background-clip: border-box;
+			height: 500px;
+			border-radius: 50px 10px ;
+			padding: 30px ;
+		}
+
+		div{
+			background-color: rgba(0,0,0,1) ;
+			color: #fff ;	
+			box-shadow: -5px -8px 7px rgba(0,0,0,.5) ;
+			word-wrap: break-word; 
+			width: 600px; 
+			height: 220px;
+			font-weight: bold;
+			text-shadow: 0px 0px 20px rgba(255,255,0,1), 0px 0px 20px rgba(0,255,0,1), 0px 0px 20px rgba(255,255,0,1), 0px 0px 20px rgba(255,255,0,1), 0px 0px 20px rgba(255,255,0,1);
+		}
+		nav{ height: 300px; 
+			width: 300px ;
+			margin-left: 30px;
+			margin-bottom: 50px;
+			background: green ; 
+			padding: 20px ;
+			border: 30px solid #000 ; 
+		/*	border-image-source: url(imagenes/vnzla32.ico) ;
+			border-image-width: 30px;
+			border-image-slice: 35% 40% 25% 30% ;
+			border-image-repeat: round;/*a ver en la parte izquierda se vera el 20% tomando punto inicial la izquierda y toma el 20% de la longuitud(width) de la imagen esta se repite pero como sera la imagen repetida? pues no tendra un 25% de arriba, 40% derecha, 40% de abajo x lo q apenas se ve algo amarillo 
+			border-image-outset: 50px */
+
+			border-image: url(imagenes/vnzla32.ico) 35% 40% 25% 30% / 30px / 50px round;
+				/* url() slice / width / outset repeat ; */
+		}
+
+		article{
+			font-size: 4em ; 
+		
+			background: rgba(230,230,230,1); ;
+			text-shadow: 
+			1px 1px 0px rgba(230,230,230,1), 
+			2px 2px 0px rgba(200,200,200,1),
+			3px 3px 0px rgba(180,180,180,1),
+			4px 4px 0px rgba(160,160,160,1),
+			6px 6px 0px rgba(0,0,0,1),
+			9px 9px 10px rgba(0,0,0,.4) ;
+		}
+
+	</style>
+</head>
+<body>
+	<p class="ejemplo">
+		Otra de las novedades es la posibilidad de trabajar con columnas de texto. Realmente,
+	con el ancho actual de las pantallas ha sido necesario hacerlo, puesto
+		que un ancho demasiado grande en los párrafos de texto afecta a su legibilidad.
+		Así, desde la especificación 3, podemos utilizar diseños con columnas.
+		Las propiedades que hemos de emplear -moz-column-count: 3;
+-webkit-column-count: 3;
+-moz-column-width: 200px;
+-webkit-column-width:200px;
+-moz-column-gap: 20px;
+-webkit-column-gap: 20px;
+Nos generará una estructura de tres columnas siempre y cuando puedan cumplir
+con el tamaño de ancho de columna preferido, fijado con -column-width,
+si se hiciera así, emplearía la parte proporcional del área disponible. Con la
+propiedad *-column-gap:￿20px definimos el margen que queremos entre columnas,
+y también disponemos de la propiedad column-rule, con la que podemos
+definir un filete que divida las columnas.</p>
+
+<div>
+	Otradelasnovedadeseslaposibilidaddetrabajarconcolumnasdetexto.Realmente,conelanchoactualdelaspantallashasidonecesariohacerlo,puestoqueunanchodemasiadograndeenlospárrafosdetextoafectaasulegibilidad.
+		Así, desde la especificación 3, podemos utilizar diseños con columnas.
+		Las propiedades que hemos de emplear -moz-column-count: 3;
+-webkit-column-count: 3;
+-moz-column-width: 200px;
+-webkit-column-width:200px;
+-moz-column-gap: 20px;
+-webkit-column-gap: 20px;
+Nos generará una estructura de tres columnas siempre y cuando puedan cumplir
+con el tamaño de ancho de columna preferido, fijado con -column-width,
+si se hiciera así, emplearía la parte proporcional del área disponible. Con la
+propiedad *-column-gap:￿20px definimos el margen que queremos entre columnas,
+y también disponemos de la propiedad column-rule, con la que podemos
+definir un filete que divida las columnas.
+</div>
+
+<nav>propiedad *-column-gap:￿20px definimos el margen que queremos entre columnas,
+y también disponemos de la propiedad column-rule, con la que podemos
+definir un filete que divida las columnas.</nav>
+
+<article>
+	texto en 3D 
+</article>
+
+</body>
+</html>
